@@ -20,9 +20,13 @@
 	{
 		peso_final = peso * g_marte / g_tierra;
 	}
-	else 
+	else if (planeta == 2)
 	{
 		peso_final = peso * g_jupiter / g_tierra;	
+	}
+		else
+	{
+		peso_final = 10000000;	
 	}
 		
 	document.write("Tu peso en marte es " + parseInt(peso_final) + " kilos");
