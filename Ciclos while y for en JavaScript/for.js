@@ -1,15 +1,15 @@
-var d = document.getElementById("dibujito");
-var lienzo = d.getContext("2d");
+var d2 = document.getElementById("dibujito2");
+
+var lienzo = d2.getContext("2d");
 var lineas = 30;
-var l = 0;
+
 var xfin, yini;
 
-while (l < lineas)
+for (l = 0; l < lineas; l++)
  {
 	yini = 10 * l;
 	xfin = 10 * (l + 1);	
-	dibujarLinea("#AAF", 0, yini, xfin, 300);   
-	l = l + 1;	   
+	dibujarLinea("#AAF", 0, yini, xfin, 300);      
 	console.log("Linea " + l);	   
  }
 
