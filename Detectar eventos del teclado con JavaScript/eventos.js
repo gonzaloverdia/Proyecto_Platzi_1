@@ -7,16 +7,21 @@ var teclas = {
 }
 function dibujarTeclado(evento)
 	{
-		if(evento.keyCode == teclas.UP){
-			console.log("Vamo' pa' arriba");
-		}
-		if(evento.keyCode == teclas.DOWN){
-			console.log("Vamo' pa' abajo");
-		}
-		if(evento.keyCode == teclas.LEFT){
-			console.log("Vamo' pa' la izquierda");
-		}
-		if(evento.keyCode == teclas.RIGHT){
-			console.log("Vamo' pa' la derecha");
+		switch(evento.keyCode) {
+			case teclas.UP:
+				console.log("arriba");
+				break;
+			case teclas.DOWN:
+				console.log("abajo");
+				break;
+				case teclas.LEFT:
+				console.log("izquierda");
+				break;
+				case teclas.RIGHT:
+				console.log("derecha");
+				break;
+			default: 
+				console.log("Otra tecla");
+				break
 		}
 	}
