@@ -2,13 +2,13 @@ var num = 100;
 
 for(i = 1; i<=num; i++)
 	{
-		if(i % 3 == 0 && i % 5 == 0 ){
+		if(esDivisible(i, 3) && esDivisible(i, 5)){
 			document.write("Fizz - Buzz");
 			}
-		 else if(i % 3 == 0) {
+		 else if(esDivisible(i, 3)) {
 			document.write("Fizz");
 		}
-		else if(i % 5 == 0) {
+		else if(esDivisible(i, 5)) {
 			document.write("Buzz");
 		} else {
 			document.write(i);
@@ -17,3 +17,13 @@ for(i = 1; i<=num; i++)
 		
 	}
 
+function esDivisible(num, divisor)
+{
+	if (num % divisor == 0){
+		return true;
+	}
+	else
+	{
+	 return false;	
+	}
+}
